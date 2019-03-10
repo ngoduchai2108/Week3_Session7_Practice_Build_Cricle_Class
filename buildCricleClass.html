@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build Cricle Class</title>
+</head>
+<body>
+<script>
+let Cricle = function (radius) {
+    this.radius = radius;
+    this.getRadius = function () {
+        return this.radius;
+    }
+    this.getArea = function () {
+        return Math.PI*radius*radius;
+    }
+}
+// Use class Cricle, creat object cricle with radius is 2
+let cricle = new Cricle(2);
+// let radius = cricle.radius;
+let radius = cricle.getRadius();
+// cricle.radius = 5;
+// cricle.getRadius();
+let area = cricle.getArea();
+alert('Cricle with radius is '+radius+" -----  AreaCricle is "+area);
+</script>
+</body>
+</html>
